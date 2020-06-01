@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="handlers"
+            type="com.aaamab.delivery.vovo.ui.mainpage.Main.MyClickHandlers" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.mainpage.Main">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linearlaycate"
+            android:id="@+id/container"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearlaycate"
+            android:orientation="horizontal"
+            android:background="@color/colorBackground"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/linhome"
+                android:onClick="@{handlers.Home}"
+                >
+
+                <ImageView
+                    android:id="@+id/imghome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_home_disactive"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/history"
+                android:onClick="@{handlers.History}"
+                >
+
+                <ImageView
+                    android:id="@+id/imghistory"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_history"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/search"
+                android:onClick="@{handlers.Search}"
+                >
+
+                <ImageView
+                    android:id="@+id/imgsearch"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_search"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/profile"
+                android:onClick="@{handlers.Profile}"
+                >
+
+                <ImageView
+                    android:id="@+id/imgprofile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_supervisor"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linearlaycate"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/colorBackground"
+            android:layout_alignParentEnd="true"
+            android:onClick="@{handlers.AddOrder}"
+            android:src="@drawable/ic_add"
+            />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aaamab.delivery.vovo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon2"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:roundIcon="@mipmap/ic_icon2_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.order.CreateOrder"></activity>
+        <activity android:name=".ui.mainpage.Main" />
+        <activity android:name=".ui.registerpage.RegisterActivity" />
+        <activity android:name=".ui.loginpage.LoginActivity" />
+        <activity android:name=".ui.navpage.NavActivity" />
+        <activity android:name=".ui.splashview.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

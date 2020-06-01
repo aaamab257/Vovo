@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Your Doctor</string>
+    <string name="txt_title">تطبيق  فوفو
+ لخدمات صيانة السيارات</string>
+    <string name="txt_selected">من فضلك قم بأختيار نوع الحساب</string>
+    <string name="txt_delivery">مريض</string>
+    <string name="txt_user">طبيب</string>
+    <string name="txt_email">البريد الالكترونى</string>
+    <string name="txt_phone">رقم الهاتف</string>
+    <string name="txt_name">الاسم</string>
+    <string name="txt_pass">كلمة السر</string>
+    <string name="txt_welcome">مرحبا</string>
+    <string name="txt_hometitle">تطبيق فوفو</string>
+    <string name="txt_homedis">هتصلح عربيتك فى اى وقت</string>
+    <string name="txt_mandob">الميكانيكية</string>
+    <string name="txt_meca">قم بالأختيار من الاقسام التالية</string>
+    <string name="txt_username">أحمد أشرف</string>
+    <string name="txt_order">إعلان جديد</string>
+    <string name="txt_login">تسجيل</string>
+    <string name="txt_remmemberme">تذكرنى</string>
+    <string name="txt_forgetpass">نسيت كلمة المرور ؟</string>
+    <string name="txt_newacc">تسجيل حساب جديد</string>
+    <string name="txt_or">او التسجيل عن طريق</string>
+    <string name="txt_confirm">تأكيد كلمة المرور</string>
+    <string name="txt_address">ادخل عنوانك</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

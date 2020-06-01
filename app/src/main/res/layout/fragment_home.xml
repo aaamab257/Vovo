@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/doctorbg"
+        tools:context=".ui.home.HomeFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorBackground"
+            android:layoutDirection="rtl"
+            android:id="@+id/header"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/cairobold"
+                        android:text="@string/txt_homedis"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_upload"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/logo" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/header"
+            android:layout_marginTop="8dp"
+            android:layoutDirection="rtl"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_mandob"
+                android:visibility="gone"
+                android:fontFamily="@font/cairosemibold"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:visibility="gone"
+                android:background="@color/colorBackground"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="5dp"
+                android:visibility="gone"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/rec_mandobeen"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"
+                android:background="@color/colorBackground"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_meca"
+                android:textAlignment="center"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/cairosemibold"
+                />
+            <com.mlsdev.animatedrv.AnimatedRecyclerView
+                android:id="@+id/rec_helps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="1000"
+                app:layoutAnimation="@anim/layout_animation_random_scale"
+                app:layoutManagerOrientation="vertical"
+                app:gridLayoutManagerColumns="3"
+                app:layoutManagerReverse="false"
+                app:layoutManagerType="grid" />
+            <!--<androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/rec_helps"
+                />-->
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
